@@ -1,0 +1,73 @@
+LPG Gas Leak Detection and Safety Measures using ARM7 (LPC2148)
+
+Project Overview :
+Liquefied Petroleum Gas (LPG) is commonly used in households, commercial kitchens, and industrial environments because of its efficiency and ease of use. Despite these advantages, LPG is highly flammable, and accidental gas leakage can lead to serious hazards such as fire, explosions, and health risks.
+This project focuses on the design and implementation of an ARM7-based LPG Gas Leak Detection and Safety System using the LPC2148 microcontroller. The system continuously monitors LPG concentration in the surrounding environment and automatically takes safety measures when a gas leak is detected. The objective is not only to detect gas leakage but also to minimize risk by triggering immediate preventive actions.
+
+Aim of the Project :
+The main objectives of this project are:
+To continuously monitor LPG gas concentration
+To detect gas leakage at an early stage
+To automatically activate safety mechanisms without human intervention
+To improve safety in residential and industrial environments
+
+System Features :
+Real-time LPG gas detection using MQ-2 sensor
+Fast response to gas leakage conditions
+Automatic electrical power cutoff
+Automatic gas valve control
+Gas dispersion using exhaust fan
+Reliable operation using ARM7 LPC2148 microcontroller
+
+Hardware and Software Used :-
+
+Hardware Components :
+LPC2148 ARM7 Microcontroller
+MQ-2 Gas Sensor
+Relay Module
+Servo Motor
+Exhaust Fan
+LCD Display
+Buzzer
+Power supply and supporting components
+
+Software Tools :
+Embedded C programming language
+Keil µVision IDE
+Flash Magic for program uploading
+
+Working Principle:
+The MQ-2 gas sensor continuously senses the surrounding air and produces an analog output corresponding to the concentration of LPG present. This analog signal is fed to the ADC of the LPC2148 microcontroller.
+When the gas concentration is within safe limits, the system remains in normal monitoring mode. If the gas level exceeds the predefined threshold, the microcontroller immediately initiates safety actions. These actions include cutting off the electrical supply using a relay to avoid ignition, closing the gas valve using a servo motor, and activating an exhaust fan to disperse the accumulated gas. Alerts are also provided through a buzzer and LCD display.
+This approach ensures quick response and reduces the chances of accidents caused by gas leakage.
+
+Testing and Results :
+The system was tested under controlled gas exposure conditions. The MQ-2 sensor was able to detect LPG concentrations in the range of 300 ppm to 10,000 ppm. Gas leakage was detected within 10 to 15 seconds, and all safety mechanisms were activated successfully. The relay response time was fast enough to ensure immediate power cutoff, and the servo motor operated accurately to control the gas valve.
+The system demonstrated stable operation under different environmental conditions, making it suitable for real-world applications.
+
+Applications:
+Domestic kitchens
+Restaurants and commercial kitchens
+LPG storage areas
+Industrial environments
+Hotels and hostels
+
+Advantages of the System :
+Early detection of LPG leakage
+Automatic safety response
+Reduced risk of fire and explosion
+Minimal human intervention required
+Can be extended for larger installations
+
+Future Enhancements :
+Integration of GSM module for SMS alerts
+IoT-based remote monitoring
+Mobile application support
+Cloud-based data logging
+Intelligent leak prediction using data analysis
+
+Authors :
+
+Fardeen Attar
+Aman Kadakol
+Amit Mohite
